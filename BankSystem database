@@ -1,0 +1,20 @@
+// creating database named BankSystem
+
+ubuntu@ubuntu-HP:~$ mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor. Commands end with ; or \g.
+Your MySQL connection id is 13
+Server version: 8.0.27-0ubuntu0.20.04.1 (Ubuntu)
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+mysql> create database BankSystem;
+Query OK, 1 row affected (0.01 sec)
+mysql> use BankSystem;
+Database changed
+mysql> CREATE TABLE `customer` ( `ac_no` int NOT NULL AUTO_INCREMENT,
+`cname` varchar(45) DEFAULT NULL, `balance` varchar(45) DEFAULT NULL,
+`pass_code` int DEFAULT NULL, PRIMARY KEY (`ac_no`), UNIQUE KEY
+`cname_UNIQUE` (`cname`) ); Query OK, 0 rows affected (0.03 sec)
